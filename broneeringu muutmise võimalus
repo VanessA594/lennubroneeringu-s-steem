@@ -1,1 +1,27 @@
+import "./muutmine.css";
 
+export default function LennuMuutmine() {
+  return (
+    <div className="leht">
+      <div className="kast_nr_1">
+        VAJADUSEL SAAD SIIN OMA LENNUANDMEID MUUTA:
+      </div>
+      <button className="nupp_1">TÜHISTA LEND</button>
+
+      <div className="kast_nr_2">LÄHTEKOHT:</div>
+      <input type="text" className="sisend_1" />
+
+      <div className="kast_nr_3">SIHTKOHT:</div>
+      <input type="text" className="sisend_2" />
+
+      <div className="kast_nr_4">KUUPÄEV:</div>
+      <input type="date" className="sisend_3" />
+
+      <div className="kast_nr_5">KELLAAEG:</div>
+      <input type="time" className="sisend_4" />
+
+      <button className="nupp_2">TAGASI</button>
+      <button className="nupp_3">SALVESTA MUUDATUSED</button>
+    </div>
+  );
+}
